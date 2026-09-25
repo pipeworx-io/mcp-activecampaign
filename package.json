@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-activecampaign",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ActiveCampaign MCP Pack — email marketing + CRM (API v3).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0a66d205c5af16bea7186750b2b2cf8b1f05792d432ee42e7c5fc1b1183eb5d5",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-b23599c4a1ed9cf1f8c6ad64954aa020b9321d06693b32a776f07498f565c3a5",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
