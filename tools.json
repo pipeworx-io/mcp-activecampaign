@@ -1,0 +1,161 @@
+[
+  {
+    "name": "list_contacts",
+    "description": "List/search contacts (subscribers) in an ActiveCampaign account. Filter by exact email or a free-text search across name/email. Returns contacts with IDs, emails, names, and meta.total.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "email": {
+          "type": "string",
+          "description": "Filter to an exact email address."
+        },
+        "search": {
+          "type": "string",
+          "description": "Free-text search across name and email."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20, max 100)."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account"
+      ]
+    }
+  },
+  {
+    "name": "get_contact",
+    "description": "Get a single contact by ID. Returns email, name, phone, custom field values, and engagement details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "id": {
+          "type": "string",
+          "description": "ActiveCampaign contact ID."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "list_deals",
+    "description": "List CRM deals (sales pipeline opportunities). Returns deal IDs, titles, values, stages, and owners with meta.total.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20, max 100)."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account"
+      ]
+    }
+  },
+  {
+    "name": "list_campaigns",
+    "description": "List email campaigns with send/open/click metrics. Returns campaign IDs, names, status, send dates, and aggregate stats.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20, max 100)."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account"
+      ]
+    }
+  },
+  {
+    "name": "list_lists",
+    "description": "List contact lists. Returns list IDs, names, subscriber counts, and creation dates.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20, max 100)."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account"
+      ]
+    }
+  },
+  {
+    "name": "list_automations",
+    "description": "List marketing automations (workflows). Returns automation IDs, names, status, and enrolled-contact counts.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "ActiveCampaign API key (UI: Settings → Developer)."
+        },
+        "account": {
+          "type": "string",
+          "description": "Your ActiveCampaign account URL or subdomain, e.g. \"https://youraccount.api-us1.com\" or just \"youraccount\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 20, max 100)."
+        }
+      },
+      "required": [
+        "_apiKey",
+        "account"
+      ]
+    }
+  }
+]
